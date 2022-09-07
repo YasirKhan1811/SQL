@@ -1,6 +1,6 @@
 This course is about:
 1. How to explore a SQL database?
-2. Summarize different types of data, and deal with messy data.
+2. Summarize different types of data
 3. Deal with messy data
 
 In this course, we are going to use PostgreSQL.
@@ -19,3 +19,28 @@ Structure of the database that shows the tables, their columns, and the relation
 This is equal to the total number of rows, minus the number of NULL values.
 - If you count the distinct values of a column, you'll get the number of different non-NULL values in the column.
 - But if you select those distinct values directly, NULL will be included as a value if it exists in the column, even though it isn't counted by the count function.
+
+**Counting the no. of rows and columns in a database tables:**
+
+```
+To know the number of columns in a table:
+SELECT *
+FROM tablename;
+
+To know the number of rows in a table:
+SELECT count(*)
+FROM tablename;
+```
+
+Knowing how much data you have is a first step in exploratory data analysis.
+
+**Count missing values**
+Note: When you supply a column name as the input to count(), it returns the number of non-NULL values.
+
+
+
+
+
+
+
+
