@@ -11,6 +11,8 @@ A **database client** is a program used to connect to, and work with, a database
 Entity Relationship Diagram
 Structure of the database that shows the tables, their columns, and the relationships between them.
 
+![image](https://user-images.githubusercontent.com/96954071/189028126-2a54e764-8dc0-4739-97c3-1c03749c3614.png)
+
 **Few things to remember:**
 - NULL indicates missing data in a database.
 - To check which values are NULL, use "is NULL" or "is not NULL"
@@ -35,9 +37,19 @@ FROM tablename;
 Knowing how much data you have is a first step in exploratory data analysis.
 
 **Count missing values**
+To count the number of missing values in a column:
+```
+SELECT count(*) - count(column_name) AS missing
+FROM table_name;
+```
+
 Note: When you supply a column name as the input to count(), it returns the number of non-NULL values.
 
 
+### Join Tables
+- Part of exploring a database is figuring out how tables relate to each other. To join the tables, we need to find a column that they have in common where the values are consistent across the tables
+- Remember: just because two tables have a column with the same name, it doesn't mean those columns necessarily contain compatible data
+- If we find more than one pair of columns with similar data, we may need to try joining with each pair one-by-one to see if number of results are same
 
 
 
