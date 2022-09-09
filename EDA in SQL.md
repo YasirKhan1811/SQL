@@ -52,6 +52,12 @@ Note: When you supply a column name as the input to count(), it returns the numb
 - If we find more than one pair of columns with similar data, we may need to try joining with each pair one-by-one to see if number of results are same
 
 
+## The Keys to the Database
+The second stage of exploring a database is understanding the formal relationships, or links, between tables.
+
+
+
+
 
 
 
