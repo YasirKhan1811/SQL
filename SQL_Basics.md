@@ -9,3 +9,21 @@ FROM table1
 INNER JOIN table2
 ON table1.column_name = table2.column_name;
 ```
+
+Using WHERE class for many conditions:
+```SQL
+SELECT name
+FROM kids
+WHERE age = 2
+OR age = 4
+OR age = 6
+OR age = 8
+OR age = 10;
+```
+
+Use the **IN** operator instead
+```SQL
+SELECT name
+FROM kids
+WHERE age IN (2, 4, 6, 8, 10);
+```
