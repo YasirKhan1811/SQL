@@ -79,8 +79,17 @@ ORDER BY column_02 DESC;
 ```
 
 ### GROUP BY
-
-
+Often, we will need to aggregate results. For example: we might want to count the number of male and female employees in a company.
+```sql
+SELECT sex, count(*)
+FROM table
+GROUP BY sex;
+```
+Output:
+| **sex** | **count** |
+|:-------:|:---------:|
+|male|19|
+|female|12|
 
 
 
