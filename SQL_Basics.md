@@ -65,8 +65,29 @@ WHERE name like 'DataC_mp';
 ```
 We can also use the **NOT LIKE** operator to find records that don't match the pattern we specify.
 
+---
 
-### Aggregate Functions
+### ORDER BY 
+
+The ORDER BY keyword is used to sort results in ascending or descending order according to the values of one or more columns. By default, the ORDER BY keyword will sort the column in ascending order. However, to sort the column in descending order, we need to specify **DESC** command.
+
+For example:
+```sql
+SELECT column_name
+FROM table
+ORDER BY column_02 DESC;
+```
+
+### GROUP BY
+
+
+
+
+
+
+
+
+
 
 
 
