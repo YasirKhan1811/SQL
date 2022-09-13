@@ -92,6 +92,25 @@ Output:
 |female|12|
 
 
+### HAVING
+In SQL, aggregate functions can't be used in **WHERE** clauses. For example, the following query is invalid:
+
+```sql
+SELECT release_year
+FROM films
+GROUP BY release_year
+WHERE COUNT(title) > 10;
+```
+
+This means that if we want to filter based on the result of an aggregate function, we need another way! That's where the **HAVING** clause comes in. For example:
+
+```sql
+SELECT release_year
+FROM films
+GROUP BY release_year
+HAVING COUNT(title) > 10;
+```
+
 
 
 
