@@ -111,6 +111,18 @@ INNER JOIN table2
 ON table1.column_name = table2.column_name;
 ```
 
+### Joining Multiple Tables
+```sql
+SELECT *
+FROM left_table
+  INNER JOIN right_table
+    ON left_table.id = right_table.id
+  INNER JOIN another_table
+    ON left_table.id = another_table.id;
+```
+
+
+
 
 
 
