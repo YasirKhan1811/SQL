@@ -131,6 +131,9 @@ FROM left_table AS lt
 ```
 Since the **id** column exists in both the tables.
 
+### Self-ish Joins
+Joins table with itself.
+
 
 
 
