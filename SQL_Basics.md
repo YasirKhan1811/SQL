@@ -121,6 +121,16 @@ FROM left_table
     ON left_table.id = another_table.id;
 ```
 
+### INNER JOIN via using
+When the joining tables have the common column upon which these tables are being joined, we can use the **USING** command instead of **ON**.
+```sql
+SELECT lt.column_1, rt.column_2
+FROM left_table AS lt
+  INNER JOIN right_table AS rt
+    USING (id);
+```
+Since the **id** column exists in both the tables.
+
 
 
 
